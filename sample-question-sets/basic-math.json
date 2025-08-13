@@ -1,0 +1,157 @@
+{
+  "title": "Basic Mathematics Assessment",
+  "description": "Test your understanding of fundamental mathematical concepts",
+  "subject": "Mathematics",
+  "questions": [
+    {
+      "id": "math-1",
+      "question": "What is the result of 12 × 8?",
+      "category": "Multiplication",
+      "difficulty": "beginner",
+      "options": [
+        {
+          "id": "math-1a",
+          "text": "84",
+          "isCorrect": false,
+          "knowledgeGap": "multiplication-error",
+          "concept": "Arithmetic calculation error in multiplication"
+        },
+        {
+          "id": "math-1b",
+          "text": "96",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct multiplication"
+        },
+        {
+          "id": "math-1c",
+          "text": "102",
+          "isCorrect": false,
+          "knowledgeGap": "multiplication-error",
+          "concept": "Arithmetic calculation error in multiplication"
+        },
+        {
+          "id": "math-1d",
+          "text": "88",
+          "isCorrect": false,
+          "knowledgeGap": "multiplication-error",
+          "concept": "Arithmetic calculation error in multiplication"
+        }
+      ]
+    },
+    {
+      "id": "math-2",
+      "question": "If a triangle has angles of 60°, 60°, and 60°, what type of triangle is it?",
+      "category": "Geometry",
+      "difficulty": "intermediate",
+      "options": [
+        {
+          "id": "math-2a",
+          "text": "Right triangle",
+          "isCorrect": false,
+          "knowledgeGap": "triangle-types",
+          "concept": "Confusing triangle types by angle measurement"
+        },
+        {
+          "id": "math-2b",
+          "text": "Isosceles triangle",
+          "isCorrect": false,
+          "knowledgeGap": "triangle-types", 
+          "concept": "Confusing equilateral and isosceles triangles"
+        },
+        {
+          "id": "math-2c",
+          "text": "Equilateral triangle",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct understanding of equilateral triangles"
+        },
+        {
+          "id": "math-2d",
+          "text": "Scalene triangle",
+          "isCorrect": false,
+          "knowledgeGap": "triangle-types",
+          "concept": "Confusing triangle types by side/angle relationships"
+        }
+      ]
+    },
+    {
+      "id": "math-3",
+      "question": "What is the derivative of f(x) = x²?",
+      "category": "Calculus",
+      "difficulty": "advanced",
+      "options": [
+        {
+          "id": "math-3a",
+          "text": "x",
+          "isCorrect": false,
+          "knowledgeGap": "derivative-rules",
+          "concept": "Incorrect application of power rule"
+        },
+        {
+          "id": "math-3b",
+          "text": "2x",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct application of power rule"
+        },
+        {
+          "id": "math-3c",
+          "text": "x²",
+          "isCorrect": false,
+          "knowledgeGap": "derivative-concept",
+          "concept": "Not understanding what derivative represents"
+        },
+        {
+          "id": "math-3d",
+          "text": "2x²",
+          "isCorrect": false,
+          "knowledgeGap": "derivative-rules",
+          "concept": "Incorrect application of power rule"
+        }
+      ]
+    }
+  ],
+  "knowledgeGaps": {
+    "multiplication-error": {
+      "concept": "Multiplication Calculation Errors",
+      "description": "Difficulty with basic multiplication facts and calculations",
+      "recommendation": "Practice multiplication tables and double-check calculations step by step",
+      "resources": [
+        "Multiplication practice worksheets",
+        "Online math drill games",
+        "Times table reference chart"
+      ]
+    },
+    "triangle-types": {
+      "concept": "Triangle Classification",
+      "description": "Confusion about how to classify triangles by their angles and sides",
+      "recommendation": "Study the definitions of equilateral, isosceles, scalene, right, acute, and obtuse triangles",
+      "resources": [
+        "Geometry textbook chapter on triangles",
+        "Triangle classification practice problems",
+        "Visual triangle reference guide"
+      ]
+    },
+    "derivative-rules": {
+      "concept": "Derivative Calculation Rules",
+      "description": "Difficulty applying derivative rules correctly, especially the power rule",
+      "recommendation": "Review and practice the power rule: d/dx[xⁿ] = n·xⁿ⁻¹",
+      "resources": [
+        "Calculus textbook on differentiation",
+        "Derivative rules reference sheet",
+        "Online derivative calculator with steps"
+      ]
+    },
+    "derivative-concept": {
+      "concept": "Understanding Derivatives",
+      "description": "Lack of conceptual understanding of what a derivative represents",
+      "recommendation": "Study the geometric interpretation of derivatives as slopes of tangent lines",
+      "resources": [
+        "Calculus concepts visualization tools",
+        "Introduction to derivatives video series",
+        "Graphical derivative exercises"
+      ]
+    }
+  }
+}
