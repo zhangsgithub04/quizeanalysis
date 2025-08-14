@@ -47,6 +47,7 @@ Your question set should be a JSON file with the following structure:
 - **question** (string): The question text
 - **category** (string): Topical category for grouping
 - **difficulty** (string): One of: "beginner", "intermediate", "advanced"
+- **prereq** (string, optional): Prerequisites or background knowledge needed
 - **options** (array): Array of 2-6 answer options
 
 ### Option Object
@@ -96,8 +97,9 @@ Your question set should be a JSON file with the following structure:
     {
       "id": "physics-1",
       "question": "What is the unit of force in the SI system?",
-      "category": "Units and Measurements",
+      "category": "Units and Measurements", 
       "difficulty": "beginner",
+      "prereq": "Basic understanding of SI units and physical quantities",
       "options": [
         {
           "id": "physics-1a",

@@ -1,0 +1,147 @@
+{
+  "title": "Computer Science Fundamentals",
+  "description": "Test your knowledge of basic computer science concepts",
+  "subject": "Computer Science",
+  "questions": [
+    {
+      "id": "cs-1",
+      "question": "What is the time complexity of binary search in a sorted array?",
+      "category": "Algorithms",
+      "difficulty": "intermediate",
+      "options": [
+        {
+          "id": "cs-1a",
+          "text": "O(n)",
+          "isCorrect": false,
+          "knowledgeGap": "complexity-analysis",
+          "concept": "Confusing linear search with binary search complexity"
+        },
+        {
+          "id": "cs-1b",
+          "text": "O(log n)",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct understanding of binary search complexity"
+        },
+        {
+          "id": "cs-1c",
+          "text": "O(n²)",
+          "isCorrect": false,
+          "knowledgeGap": "complexity-analysis",
+          "concept": "Overestimating algorithm complexity"
+        },
+        {
+          "id": "cs-1d",
+          "text": "O(1)",
+          "isCorrect": false,
+          "knowledgeGap": "complexity-analysis",
+          "concept": "Underestimating algorithm complexity"
+        }
+      ]
+    },
+    {
+      "id": "cs-2",
+      "question": "Which data structure follows the Last In, First Out (LIFO) principle?",
+      "category": "Data Structures",
+      "difficulty": "beginner",
+      "options": [
+        {
+          "id": "cs-2a",
+          "text": "Queue",
+          "isCorrect": false,
+          "knowledgeGap": "data-structure-principles",
+          "concept": "Confusing LIFO and FIFO principles"
+        },
+        {
+          "id": "cs-2b",
+          "text": "Array",
+          "isCorrect": false,
+          "knowledgeGap": "data-structure-principles",
+          "concept": "Not understanding access patterns of data structures"
+        },
+        {
+          "id": "cs-2c",
+          "text": "Stack",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct understanding of stack operations"
+        },
+        {
+          "id": "cs-2d",
+          "text": "Linked List",
+          "isCorrect": false,
+          "knowledgeGap": "data-structure-principles",
+          "concept": "Confusing data structure organization principles"
+        }
+      ]
+    },
+    {
+      "id": "cs-3",
+      "question": "In object-oriented programming, what does 'polymorphism' mean?",
+      "category": "Object-Oriented Programming",
+      "difficulty": "intermediate",
+      "options": [
+        {
+          "id": "cs-3a",
+          "text": "Hiding internal implementation details",
+          "isCorrect": false,
+          "knowledgeGap": "oop-concepts",
+          "concept": "Confusing polymorphism with encapsulation"
+        },
+        {
+          "id": "cs-3b",
+          "text": "Creating new classes from existing ones",
+          "isCorrect": false,
+          "knowledgeGap": "oop-concepts",
+          "concept": "Confusing polymorphism with inheritance"
+        },
+        {
+          "id": "cs-3c",
+          "text": "The ability of objects to take multiple forms",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct understanding of polymorphism"
+        },
+        {
+          "id": "cs-3d",
+          "text": "Bundling data and methods together",
+          "isCorrect": false,
+          "knowledgeGap": "oop-concepts",
+          "concept": "Confusing polymorphism with encapsulation"
+        }
+      ]
+    }
+  ],
+  "knowledgeGaps": {
+    "complexity-analysis": {
+      "concept": "Algorithm Complexity Analysis",
+      "description": "Difficulty understanding and analyzing the time/space complexity of algorithms",
+      "recommendation": "Study Big O notation and practice analyzing common algorithms step by step",
+      "resources": [
+        "Algorithm complexity tutorial",
+        "Big O cheat sheet",
+        "Interactive complexity analysis tool"
+      ]
+    },
+    "data-structure-principles": {
+      "concept": "Data Structure Access Patterns",
+      "description": "Confusion about how different data structures organize and access data",
+      "recommendation": "Review the fundamental principles of stacks (LIFO), queues (FIFO), and other data structures",
+      "resources": [
+        "Data structures visualization tool",
+        "Computer science textbook on data structures",
+        "Interactive data structure simulator"
+      ]
+    },
+    "oop-concepts": {
+      "concept": "Object-Oriented Programming Principles",
+      "description": "Difficulty distinguishing between the four main OOP concepts",
+      "recommendation": "Study the four pillars of OOP: encapsulation, inheritance, polymorphism, and abstraction",
+      "resources": [
+        "OOP concepts tutorial with examples",
+        "Object-oriented design patterns book",
+        "Programming language OOP documentation"
+      ]
+    }
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "title": "Category Theory Fundamentals",
+  "description": "Test your understanding of basic category theory concepts",
+  "subject": "Category Theory",
+  "questions": [
+    {
+      "id": "cat-1",
+      "question": "What is a category in category theory?",
+      "category": "Basic Definitions",
+      "difficulty": "beginner",
+      "prereq": "Basic understanding of mathematical structures and functions",
+      "options": [
+        {
+          "id": "cat-1a",
+          "text": "A collection of objects with morphisms between them, satisfying composition and identity laws",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct understanding of category definition"
+        },
+        {
+          "id": "cat-1b",
+          "text": "A set with a binary operation",
+          "isCorrect": false,
+          "knowledgeGap": "category-vs-algebraic",
+          "concept": "Confusing categories with algebraic structures"
+        },
+        {
+          "id": "cat-1c",
+          "text": "A type of mathematical function",
+          "isCorrect": false,
+          "knowledgeGap": "category-vs-function",
+          "concept": "Confusing categories with functions"
+        },
+        {
+          "id": "cat-1d",
+          "text": "A collection of sets with inclusion relations",
+          "isCorrect": false,
+          "knowledgeGap": "category-vs-set-theory",
+          "concept": "Confusing categories with set-theoretic structures"
+        }
+      ]
+    },
+    {
+      "id": "cat-2",
+      "question": "What must be satisfied for composition of morphisms f: A → B and g: B → C?",
+      "category": "Morphisms and Composition",
+      "difficulty": "intermediate",
+      "prereq": "Understanding of categories, objects, and morphisms",
+      "options": [
+        {
+          "id": "cat-2a",
+          "text": "The codomain of f must equal the domain of g",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct understanding of morphism composition"
+        },
+        {
+          "id": "cat-2b",
+          "text": "f and g must be bijective",
+          "isCorrect": false,
+          "knowledgeGap": "composition-requirements",
+          "concept": "Confusing composition with invertibility requirements"
+        },
+        {
+          "id": "cat-2c",
+          "text": "f and g must commute",
+          "isCorrect": false,
+          "knowledgeGap": "composition-vs-commutativity",
+          "concept": "Confusing composition with commutativity"
+        },
+        {
+          "id": "cat-2d",
+          "text": "f and g must have the same type",
+          "isCorrect": false,
+          "knowledgeGap": "composition-requirements",
+          "concept": "Misunderstanding morphism typing in composition"
+        }
+      ]
+    },
+    {
+      "id": "cat-3",
+      "question": "What is a functor?",
+      "category": "Functors",
+      "difficulty": "intermediate",
+      "prereq": "Knowledge of categories and structure-preserving mappings",
+      "options": [
+        {
+          "id": "cat-3a",
+          "text": "A mapping between categories that preserves structure",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct understanding of functors"
+        },
+        {
+          "id": "cat-3b",
+          "text": "A special type of morphism within a category",
+          "isCorrect": false,
+          "knowledgeGap": "functor-vs-morphism",
+          "concept": "Confusing functors with morphisms"
+        },
+        {
+          "id": "cat-3c",
+          "text": "An object that can be mapped to itself",
+          "isCorrect": false,
+          "knowledgeGap": "functor-vs-object",
+          "concept": "Confusing functors with objects"
+        },
+        {
+          "id": "cat-3d",
+          "text": "A category with exactly one object",
+          "isCorrect": false,
+          "knowledgeGap": "functor-vs-monoid",
+          "concept": "Confusing functors with monoids as one-object categories"
+        }
+      ]
+    },
+    {
+      "id": "cat-4",
+      "question": "In the category Set, what are the objects and morphisms?",
+      "category": "Examples of Categories",
+      "difficulty": "beginner",
+      "prereq": "Basic set theory and understanding of categories",
+      "options": [
+        {
+          "id": "cat-4a",
+          "text": "Objects are sets, morphisms are functions between sets",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct understanding of Set category"
+        },
+        {
+          "id": "cat-4b",
+          "text": "Objects are functions, morphisms are sets",
+          "isCorrect": false,
+          "knowledgeGap": "object-morphism-confusion",
+          "concept": "Confusing objects and morphisms in Set"
+        },
+        {
+          "id": "cat-4c",
+          "text": "Objects are elements, morphisms are sets containing them",
+          "isCorrect": false,
+          "knowledgeGap": "element-vs-set-confusion",
+          "concept": "Confusing set elements with set objects"
+        },
+        {
+          "id": "cat-4d",
+          "text": "Objects are categories, morphisms are functors",
+          "isCorrect": false,
+          "knowledgeGap": "category-levels-confusion",
+          "concept": "Confusing different categorical levels"
+        }
+      ]
+    },
+    {
+      "id": "cat-5",
+      "question": "What is a natural transformation?",
+      "category": "Natural Transformations",
+      "difficulty": "advanced",
+      "prereq": "Advanced knowledge of functors and commutative diagrams",
+      "options": [
+        {
+          "id": "cat-5a",
+          "text": "A way of transforming one functor into another while respecting the categorical structure",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct understanding of natural transformations"
+        },
+        {
+          "id": "cat-5b",
+          "text": "A functor that maps each object to itself",
+          "isCorrect": false,
+          "knowledgeGap": "natural-vs-identity",
+          "concept": "Confusing natural transformations with identity functors"
+        },
+        {
+          "id": "cat-5c",
+          "text": "A morphism that exists in every category",
+          "isCorrect": false,
+          "knowledgeGap": "natural-vs-universal",
+          "concept": "Confusing natural transformations with universal properties"
+        },
+        {
+          "id": "cat-5d",
+          "text": "A transformation that preserves composition in the obvious way",
+          "isCorrect": false,
+          "knowledgeGap": "naturality-condition",
+          "concept": "Missing the key naturality square condition"
+        }
+      ]
+    }
+  ],
+  "knowledgeGaps": {
+    "category-vs-algebraic": {
+      "concept": "Category vs Algebraic Structure Confusion",
+      "description": "Difficulty distinguishing categories from algebraic structures like groups or rings",
+      "recommendation": "Study how categories generalize algebraic structures by focusing on morphisms rather than operations",
+      "resources": [
+        "Category Theory for Programmers - Bartosz Milewski",
+        "Categories for the Working Mathematician - Saunders Mac Lane",
+        "Visual introduction to category theory diagrams"
+      ]
+    },
+    "category-vs-function": {
+      "concept": "Category vs Function Confusion",
+      "description": "Misunderstanding categories as being functions rather than structures containing morphisms",
+      "recommendation": "Focus on understanding categories as mathematical structures with objects and arrows, not functions themselves",
+      "resources": [
+        "Basic Category Theory - Tom Leinster",
+        "Category theory visualization tools",
+        "Introduction to categorical thinking"
+      ]
+    },
+    "category-vs-set-theory": {
+      "concept": "Category vs Set Theory Confusion",
+      "description": "Conflating categorical structures with set-theoretic constructions",
+      "recommendation": "Learn how category theory abstracts away from set membership to focus on structural relationships",
+      "resources": [
+        "Conceptual Mathematics - Lawvere & Schanuel",
+        "Category theory as an alternative foundation",
+        "Sets vs categories comparison guide"
+      ]
+    },
+    "composition-requirements": {
+      "concept": "Morphism Composition Requirements",
+      "description": "Misunderstanding what is required for morphisms to be composable",
+      "recommendation": "Practice composing morphisms and understand the domain/codomain matching requirement",
+      "resources": [
+        "Morphism composition exercises",
+        "Category theory workbook",
+        "Interactive category theory diagrams"
+      ]
+    },
+    "composition-vs-commutativity": {
+      "concept": "Composition vs Commutativity",
+      "description": "Confusing morphism composition with commutativity of operations",
+      "recommendation": "Study examples where composition is associative but not necessarily commutative",
+      "resources": [
+        "Non-commutative category examples",
+        "Associativity vs commutativity in categories",
+        "Group theory vs category theory comparison"
+      ]
+    },
+    "functor-vs-morphism": {
+      "concept": "Functor vs Morphism Confusion",
+      "description": "Difficulty distinguishing between functors (mappings between categories) and morphisms (arrows within categories)",
+      "recommendation": "Study the levels: objects and morphisms within categories, functors between categories",
+      "resources": [
+        "Functor examples and exercises",
+        "Category theory hierarchy visualization",
+        "Functors as structure-preserving mappings"
+      ]
+    },
+    "functor-vs-object": {
+      "concept": "Functor vs Object Confusion", 
+      "description": "Misunderstanding functors as objects rather than mappings between categories",
+      "recommendation": "Focus on functors as arrows at the category level, mapping between entire categories",
+      "resources": [
+        "Functor definition and examples",
+        "Category of categories explanation",
+        "Higher-order categorical thinking"
+      ]
+    },
+    "functor-vs-monoid": {
+      "concept": "Functor vs Monoid Category Confusion",
+      "description": "Confusing functors with monoids viewed as one-object categories",
+      "recommendation": "Study how monoids can be seen as categories, but functors are mappings between any categories",
+      "resources": [
+        "Monoids as categories explanation",
+        "Delooping and categorical monoids",
+        "Examples of functors between different category types"
+      ]
+    },
+    "object-morphism-confusion": {
+      "concept": "Object and Morphism Role Confusion",
+      "description": "Mixing up what serves as objects versus morphisms in specific categories",
+      "recommendation": "Practice identifying objects and morphisms in various concrete categories",
+      "resources": [
+        "Category examples: Set, Group, Top, etc.",
+        "Objects and morphisms identification exercises",
+        "Concrete categories workbook"
+      ]
+    },
+    "element-vs-set-confusion": {
+      "concept": "Set Elements vs Set Objects",
+      "description": "Confusing elements of sets with sets as objects in the category Set",
+      "recommendation": "Understand the distinction between internal structure (elements) and categorical structure (objects and morphisms)",
+      "resources": [
+        "Set category detailed explanation",
+        "Internal vs external perspective in categories",
+        "Element-free approach to category theory"
+      ]
+    },
+    "category-levels-confusion": {
+      "concept": "Categorical Level Confusion",
+      "description": "Mixing up different levels of categorical abstraction (categories, functors, natural transformations)",
+      "recommendation": "Study the hierarchy: objects/morphisms → categories/functors → 2-categories/natural transformations",
+      "resources": [
+        "Higher category theory introduction",
+        "2-categorical thinking",
+        "Levels of abstraction in mathematics"
+      ]
+    },
+    "natural-vs-identity": {
+      "concept": "Natural Transformation vs Identity Functor",
+      "description": "Confusing natural transformations with identity functors or identity morphisms",
+      "recommendation": "Study specific examples of natural transformations and understand the naturality condition",
+      "resources": [
+        "Natural transformation examples",
+        "Naturality squares and commutative diagrams",
+        "Classical natural transformations (determinant, double dual, etc.)"
+      ]
+    },
+    "natural-vs-universal": {
+      "concept": "Natural Transformations vs Universal Properties",
+      "description": "Confusing natural transformations with universal properties or universal morphisms",
+      "recommendation": "Study both concepts separately and then understand their relationship through representable functors",
+      "resources": [
+        "Universal properties explained",
+        "Representable functors and Yoneda lemma",
+        "Natural transformations vs universality"
+      ]
+    },
+    "naturality-condition": {
+      "concept": "Naturality Condition Understanding",
+      "description": "Missing the key requirement that natural transformations make certain diagrams commute",
+      "recommendation": "Practice drawing and verifying naturality squares for concrete examples",
+      "resources": [
+        "Naturality squares exercises",
+        "Commutative diagram practice",
+        "Natural transformation verification examples"
+      ]
+    }
+  }
+}

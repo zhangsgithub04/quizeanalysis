@@ -1,11 +1,12 @@
-# Quantum Computing Knowledge Gap Diagnostic Tool
+# Knowledge Gap Diagnostic Tool
 
-A React application that presents annotated multiple-choice questions on quantum computing to diagnose specific knowledge gaps and provide targeted learning recommendations.
+A universal React application that diagnoses knowledge gaps across any subject area using annotated multiple-choice questions and AI-powered personalized feedback. Includes sample question sets for Quantum Computing, Category Theory, and Blockchain Technology.
 
 ## Features
 
-- **Customizable Question Sets**: Upload your own JSON question files or use the default quantum computing quiz
-- **Multi-Subject Support**: Designed for any subject area - instructors can create questions for their specific needs
+- **Multi-Subject Platform**: Built-in support for Quantum Computing, Category Theory, and Blockchain Technology
+- **Universal Framework**: Designed for any subject area - instructors can create questions for their specific needs  
+- **Subject Selection**: Choose from predefined subjects or upload custom question sets
 - **AI-Powered Analysis**: Uses OpenAI GPT-4 to provide personalized diagnosis and feedback
 - **Annotated Options**: Each answer option is annotated with the specific concept it tests
 - **Knowledge Gap Analysis**: Identifies specific misconceptions and knowledge gaps based on incorrect answers
@@ -15,14 +16,15 @@ A React application that presents annotated multiple-choice questions on quantum
 
 ## How It Works
 
-1. **Choose or Upload Questions**: Use the default quantum computing quiz or upload your own custom question set
+1. **Select Subject**: Choose from Quantum Computing, Category Theory, Blockchain, or upload custom questions
 2. **Answer Questions**: Each option in the MCQ tests specific subject concepts and misconceptions
 3. **AI Analysis**: The system analyzes responses to identify knowledge gaps and misconceptions
 4. **Targeted Feedback**: Get personalized recommendations based on your specific weaknesses
 5. **Study Plan**: Receive a prioritized learning path to maximize efficiency
 
-## Default Topics Covered (Quantum Computing)
+## Built-in Subject Areas
 
+### 🔬 Quantum Computing
 - Basic Concepts (qubits, classical vs quantum information)
 - Quantum Properties (superposition, entanglement, interference)
 - Quantum Measurement (measurement effects, state collapse)
@@ -30,19 +32,33 @@ A React application that presents annotated multiple-choice questions on quantum
 - Quantum Algorithms (Shor's, Grover's, and others)
 - Quantum Errors (decoherence, environmental effects)
 
+### 📐 Category Theory
+- Basic Definitions (categories, objects, morphisms)
+- Morphisms and Composition (composition rules, associativity)
+- Functors (structure-preserving mappings between categories)
+- Examples of Categories (Set, Group, topology categories)
+- Natural Transformations (functor transformations, naturality condition)
+
+### 🔗 Blockchain & Cryptocurrency
+- Basic Concepts (distributed ledgers, decentralization)
+- Mining and Consensus (proof-of-work, transaction validation)
+- Smart Contracts (self-executing code, Ethereum)
+- Cryptographic Security (hash functions, double-spending problem)
+- Blockchain Types (public vs private, permissioned networks)
+
 ## Custom Question Sets
 
 The system supports uploading custom question sets in JSON format for any subject area. See [Question Format Documentation](docs/question-format.md) for detailed instructions.
 
 ## Knowledge Gap Categories
 
-The system can identify 20+ specific knowledge gaps including:
-- Classical vs Quantum Information confusion
-- Superposition vs Entanglement misconceptions
-- Measurement effect misunderstandings
-- Gate operation confusion
-- Algorithm application errors
-- Decoherence source confusion
+The system can identify 50+ specific knowledge gaps across different subjects including:
+
+**Quantum Computing**: Classical vs quantum confusion, superposition vs entanglement misconceptions, measurement effects, gate operations, algorithm applications
+
+**Category Theory**: Category vs algebraic structure confusion, functor vs morphism distinction, naturality conditions, categorical levels
+
+**Blockchain**: Blockchain vs cryptocurrency distinction, centralized vs decentralized systems, mining vs consensus, smart contracts vs legal contracts
 
 ## Getting Started
 
@@ -87,9 +103,10 @@ The system can identify 20+ specific knowledge gaps including:
 4. Upload your JSON file
 
 ### Sample Question Sets
-The repository includes sample question sets in `sample-question-sets/`:
-- `basic-math.json` - Mathematics fundamentals
-- `computer-science.json` - CS concepts
+The repository includes sample question sets for various subjects:
+- **Built-in**: Quantum Computing (default), Category Theory, Blockchain Technology  
+- **Additional samples**: `basic-math.json`, `computer-science.json`
+- **Custom**: Upload your own JSON files for any subject
 
 ### Detailed Documentation
 See [docs/question-format.md](docs/question-format.md) for complete formatting instructions.
@@ -120,9 +137,13 @@ src/
 │   └── question-format.md         # Question format documentation
 ├── lib/
 │   └── openai.ts                  # OpenAI API integration and utilities
-├── sample-question-sets/
+├── public/sample-question-sets/
+│   ├── category-theory.json      # Category theory questions
+│   ├── blockchain.json           # Blockchain & crypto questions
 │   ├── basic-math.json           # Sample mathematics question set
 │   └── computer-science.json     # Sample CS question set
+├── sample-question-sets/
+│   └── (same files as above)     # Development copies
 ├── types/
 │   └── mcq.ts                    # TypeScript type definitions
 └── utils/

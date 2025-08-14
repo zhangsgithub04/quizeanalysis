@@ -1,0 +1,411 @@
+{
+  "title": "Blockchain Technology Fundamentals",
+  "description": "Test your understanding of blockchain concepts and cryptocurrency principles",
+  "subject": "Blockchain & Cryptocurrency",
+  "questions": [
+    {
+      "id": "bc-1",
+      "question": "What is a blockchain?",
+      "category": "Basic Concepts",
+      "difficulty": "beginner",
+      "prereq": "Basic understanding of databases and cryptographic concepts",
+      "options": [
+        {
+          "id": "bc-1a",
+          "text": "A distributed ledger of transactions linked using cryptography",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct understanding of blockchain definition"
+        },
+        {
+          "id": "bc-1b",
+          "text": "A type of cryptocurrency",
+          "isCorrect": false,
+          "knowledgeGap": "blockchain-vs-cryptocurrency",
+          "concept": "Confusing blockchain technology with cryptocurrency"
+        },
+        {
+          "id": "bc-1c",
+          "text": "A centralized database managed by banks",
+          "isCorrect": false,
+          "knowledgeGap": "centralized-vs-decentralized",
+          "concept": "Misunderstanding blockchain's decentralized nature"
+        },
+        {
+          "id": "bc-1d",
+          "text": "A programming language for smart contracts",
+          "isCorrect": false,
+          "knowledgeGap": "blockchain-vs-programming",
+          "concept": "Confusing blockchain with programming languages"
+        }
+      ]
+    },
+    {
+      "id": "bc-2",
+      "question": "What is the primary purpose of mining in a blockchain network?",
+      "category": "Mining and Consensus",
+      "difficulty": "intermediate",
+      "prereq": "Knowledge of blockchain basics and consensus mechanisms",
+      "options": [
+        {
+          "id": "bc-2a",
+          "text": "To validate transactions and create new blocks",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct understanding of mining purpose"
+        },
+        {
+          "id": "bc-2b",
+          "text": "To create new cryptocurrencies",
+          "isCorrect": false,
+          "knowledgeGap": "mining-vs-token-creation",
+          "concept": "Confusing mining with token creation"
+        },
+        {
+          "id": "bc-2c",
+          "text": "To store transactions in a central database",
+          "isCorrect": false,
+          "knowledgeGap": "mining-vs-storage",
+          "concept": "Misunderstanding mining as simple data storage"
+        },
+        {
+          "id": "bc-2d",
+          "text": "To encrypt user passwords",
+          "isCorrect": false,
+          "knowledgeGap": "mining-vs-encryption",
+          "concept": "Confusing mining with general cryptographic operations"
+        }
+      ]
+    },
+    {
+      "id": "bc-3",
+      "question": "What is a smart contract?",
+      "category": "Smart Contracts",
+      "difficulty": "intermediate",
+      "prereq": "Understanding of blockchain technology and programming concepts",
+      "options": [
+        {
+          "id": "bc-3a",
+          "text": "Self-executing code with contract terms directly written into the code",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct understanding of smart contracts"
+        },
+        {
+          "id": "bc-3b",
+          "text": "A legal document stored on the blockchain",
+          "isCorrect": false,
+          "knowledgeGap": "smart-vs-legal-contract",
+          "concept": "Confusing smart contracts with legal documents"
+        },
+        {
+          "id": "bc-3c",
+          "text": "A type of cryptocurrency wallet",
+          "isCorrect": false,
+          "knowledgeGap": "contract-vs-wallet",
+          "concept": "Confusing smart contracts with wallets"
+        },
+        {
+          "id": "bc-3d",
+          "text": "An agreement between miners to validate transactions",
+          "isCorrect": false,
+          "knowledgeGap": "contract-vs-consensus",
+          "concept": "Confusing smart contracts with consensus mechanisms"
+        }
+      ]
+    },
+    {
+      "id": "bc-4",
+      "question": "What is the double-spending problem?",
+      "category": "Cryptographic Security",
+      "difficulty": "intermediate",
+      "prereq": "Knowledge of digital currencies and cryptographic security",
+      "options": [
+        {
+          "id": "bc-4a",
+          "text": "The risk of spending the same digital currency twice",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct understanding of double-spending"
+        },
+        {
+          "id": "bc-4b",
+          "text": "Spending twice as much as intended on a transaction",
+          "isCorrect": false,
+          "knowledgeGap": "double-spending-meaning",
+          "concept": "Misunderstanding double-spending as overspending"
+        },
+        {
+          "id": "bc-4c",
+          "text": "A type of cryptocurrency scam",
+          "isCorrect": false,
+          "knowledgeGap": "technical-vs-social-issues",
+          "concept": "Confusing technical problems with social attacks"
+        },
+        {
+          "id": "bc-4d",
+          "text": "When transaction fees are charged twice",
+          "isCorrect": false,
+          "knowledgeGap": "double-spending-vs-fees",
+          "concept": "Confusing double-spending with fee issues"
+        }
+      ]
+    },
+    {
+      "id": "bc-5",
+      "question": "What is the difference between public and private blockchains?",
+      "category": "Blockchain Types",
+      "difficulty": "beginner",
+      "prereq": "Basic understanding of blockchain architecture and access control",
+      "options": [
+        {
+          "id": "bc-5a",
+          "text": "Public blockchains are open to everyone, private blockchains are restricted to specific parties",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct understanding of blockchain access models"
+        },
+        {
+          "id": "bc-5b",
+          "text": "Public blockchains are free, private blockchains cost money",
+          "isCorrect": false,
+          "knowledgeGap": "access-vs-cost",
+          "concept": "Confusing access control with cost models"
+        },
+        {
+          "id": "bc-5c",
+          "text": "Public blockchains use proof-of-work, private blockchains use proof-of-stake",
+          "isCorrect": false,
+          "knowledgeGap": "access-vs-consensus",
+          "concept": "Confusing access models with consensus mechanisms"
+        },
+        {
+          "id": "bc-5d",
+          "text": "There is no difference, they are the same thing",
+          "isCorrect": false,
+          "knowledgeGap": "blockchain-type-distinction",
+          "concept": "Not recognizing different blockchain deployment models"
+        }
+      ]
+    },
+    {
+      "id": "bc-6",
+      "question": "What is a hash function's role in blockchain?",
+      "category": "Cryptographic Security",
+      "difficulty": "advanced",
+      "prereq": "Advanced knowledge of cryptography and blockchain structure",
+      "options": [
+        {
+          "id": "bc-6a",
+          "text": "To create unique fingerprints for data and link blocks together",
+          "isCorrect": true,
+          "knowledgeGap": "none",
+          "concept": "Correct understanding of hash functions in blockchain"
+        },
+        {
+          "id": "bc-6b",
+          "text": "To encrypt private keys for secure storage",
+          "isCorrect": false,
+          "knowledgeGap": "hash-vs-encryption",
+          "concept": "Confusing hashing with encryption"
+        },
+        {
+          "id": "bc-6c",
+          "text": "To compress large files for efficient storage",
+          "isCorrect": false,
+          "knowledgeGap": "hash-vs-compression",
+          "concept": "Confusing hashing with data compression"
+        },
+        {
+          "id": "bc-6d",
+          "text": "To generate new cryptocurrency addresses",
+          "isCorrect": false,
+          "knowledgeGap": "hash-vs-address-generation",
+          "concept": "Partially correct but missing the core blockchain linking function"
+        }
+      ]
+    }
+  ],
+  "knowledgeGaps": {
+    "blockchain-vs-cryptocurrency": {
+      "concept": "Blockchain vs Cryptocurrency Distinction",
+      "description": "Difficulty understanding that blockchain is the underlying technology while cryptocurrency is one application",
+      "recommendation": "Study blockchain as a general-purpose distributed ledger technology with many applications beyond currency",
+      "resources": [
+        "Blockchain fundamentals course",
+        "Non-cryptocurrency blockchain applications",
+        "Distributed ledger technology overview"
+      ]
+    },
+    "centralized-vs-decentralized": {
+      "concept": "Centralized vs Decentralized Systems",
+      "description": "Misunderstanding the decentralized nature of blockchain networks",
+      "recommendation": "Learn about distributed systems, peer-to-peer networks, and the problems with centralized control",
+      "resources": [
+        "Decentralization principles",
+        "Distributed systems fundamentals",
+        "Peer-to-peer network architecture"
+      ]
+    },
+    "blockchain-vs-programming": {
+      "concept": "Blockchain vs Programming Tools",
+      "description": "Confusing blockchain infrastructure with programming languages or development tools",
+      "recommendation": "Understand blockchain as infrastructure, with smart contract languages like Solidity running on top",
+      "resources": [
+        "Blockchain architecture layers",
+        "Smart contract development basics",
+        "Ethereum development stack overview"
+      ]
+    },
+    "mining-vs-token-creation": {
+      "concept": "Mining vs Token Creation",
+      "description": "Misunderstanding mining as creating new types of cryptocurrencies rather than validating existing ones",
+      "recommendation": "Study how mining validates transactions and secures networks, versus how new tokens are initially created",
+      "resources": [
+        "Proof-of-work consensus mechanism",
+        "Cryptocurrency tokenomics",
+        "Mining pool operations"
+      ]
+    },
+    "mining-vs-storage": {
+      "concept": "Mining vs Simple Data Storage",
+      "description": "Not understanding mining's role in consensus and security, seeing it as just data storage",
+      "recommendation": "Learn about consensus mechanisms, Byzantine fault tolerance, and why proof-of-work is needed",
+      "resources": [
+        "Consensus mechanisms explained",
+        "Byzantine Generals Problem",
+        "Blockchain security fundamentals"
+      ]
+    },
+    "mining-vs-encryption": {
+      "concept": "Mining vs General Cryptography",
+      "description": "Confusing mining's specific cryptographic puzzles with general encryption operations",
+      "recommendation": "Study the specific role of SHA-256 in proof-of-work versus other cryptographic uses",
+      "resources": [
+        "Proof-of-work algorithm details",
+        "Cryptographic hash functions",
+        "Bitcoin mining technical details"
+      ]
+    },
+    "smart-vs-legal-contract": {
+      "concept": "Smart Contracts vs Legal Contracts",
+      "description": "Misunderstanding smart contracts as legal documents rather than executable code",
+      "recommendation": "Learn how smart contracts are programs that automatically execute when conditions are met",
+      "resources": [
+        "Smart contract programming tutorial",
+        "Solidity language basics",
+        "Ethereum smart contract examples"
+      ]
+    },
+    "contract-vs-wallet": {
+      "concept": "Smart Contracts vs Wallets",
+      "description": "Confusing smart contracts with cryptocurrency wallets or storage mechanisms",
+      "recommendation": "Understand that smart contracts are programs, while wallets are interfaces for managing keys and funds",
+      "resources": [
+        "Wallet types and functionality",
+        "Public-private key cryptography",
+        "Smart contract interaction patterns"
+      ]
+    },
+    "contract-vs-consensus": {
+      "concept": "Smart Contracts vs Consensus Mechanisms",
+      "description": "Confusing smart contracts with the underlying consensus protocols",
+      "recommendation": "Study how smart contracts run on top of consensus layers, they are different system components",
+      "resources": [
+        "Blockchain layer architecture",
+        "Consensus vs execution layers",
+        "Ethereum 2.0 architecture overview"
+      ]
+    },
+    "double-spending-meaning": {
+      "concept": "Double-Spending Problem Definition",
+      "description": "Misunderstanding what the double-spending problem actually means in digital currencies",
+      "recommendation": "Study why digital money differs from physical money and how blockchain prevents duplicate spending",
+      "resources": [
+        "Digital money challenges",
+        "Bitcoin whitepaper explanation",
+        "Cryptographic proof systems"
+      ]
+    },
+    "technical-vs-social-issues": {
+      "concept": "Technical vs Social Blockchain Issues",
+      "description": "Confusing technical protocol problems with social engineering or scam issues",
+      "recommendation": "Distinguish between protocol-level technical challenges and user-facing security issues",
+      "resources": [
+        "Blockchain technical challenges",
+        "Cryptocurrency security best practices",
+        "Protocol vs application layer security"
+      ]
+    },
+    "double-spending-vs-fees": {
+      "concept": "Double-Spending vs Transaction Fees",
+      "description": "Confusing the double-spending problem with transaction fee or billing issues",
+      "recommendation": "Understand double-spending as a fundamental problem with digital money, not a fee calculation error",
+      "resources": [
+        "Digital money fundamentals",
+        "Transaction verification process",
+        "Blockchain immutability principles"
+      ]
+    },
+    "access-vs-cost": {
+      "concept": "Blockchain Access vs Cost Models",
+      "description": "Confusing public/private access control with free/paid cost models",
+      "recommendation": "Learn that access control (who can participate) is separate from cost models (who pays for what)",
+      "resources": [
+        "Blockchain permissioning models",
+        "Public vs private vs consortium blockchains",
+        "Blockchain economics and fee structures"
+      ]
+    },
+    "access-vs-consensus": {
+      "concept": "Access Control vs Consensus Mechanisms",
+      "description": "Confusing who can access the blockchain with how the blockchain reaches consensus",
+      "recommendation": "Study access control (permissioned vs permissionless) separately from consensus algorithms",
+      "resources": [
+        "Permissioned vs permissionless networks",
+        "Consensus mechanism comparison",
+        "Enterprise blockchain deployment models"
+      ]
+    },
+    "blockchain-type-distinction": {
+      "concept": "Blockchain Deployment Model Distinctions",
+      "description": "Not recognizing the important differences between public, private, and consortium blockchains",
+      "recommendation": "Study different blockchain deployment models and their use cases",
+      "resources": [
+        "Blockchain deployment models comparison",
+        "Enterprise blockchain use cases",
+        "Public vs private blockchain trade-offs"
+      ]
+    },
+    "hash-vs-encryption": {
+      "concept": "Hashing vs Encryption",
+      "description": "Confusing one-way hash functions with two-way encryption algorithms",
+      "recommendation": "Learn the difference between hashing (one-way, fixed output) and encryption (two-way, variable)",
+      "resources": [
+        "Cryptographic hash functions explained",
+        "Encryption vs hashing comparison",
+        "SHA-256 algorithm details"
+      ]
+    },
+    "hash-vs-compression": {
+      "concept": "Hashing vs Data Compression",
+      "description": "Misunderstanding hash functions as data compression rather than integrity verification",
+      "recommendation": "Study how hashes create fixed-size fingerprints for integrity, not space-saving compression",
+      "resources": [
+        "Hash function properties",
+        "Data integrity vs compression",
+        "Merkle trees and blockchain structure"
+      ]
+    },
+    "hash-vs-address-generation": {
+      "concept": "Hash Functions vs Address Generation",
+      "description": "Partially understanding hash use in address generation but missing the core blockchain linking function",
+      "recommendation": "Study how hashes serve multiple roles: linking blocks, Merkle trees, and address derivation",
+      "resources": [
+        "Blockchain hash chain structure",
+        "Merkle tree construction",
+        "Cryptocurrency address generation process"
+      ]
+    }
+  }
+}

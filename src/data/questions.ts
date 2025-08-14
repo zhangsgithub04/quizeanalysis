@@ -6,6 +6,7 @@ export const quantumQuestions: MCQQuestion[] = [
     question: 'What is the fundamental unit of quantum information?',
     category: 'Basic Concepts',
     difficulty: 'beginner',
+    prereq: 'Basic understanding of classical information (bits) and quantum mechanics fundamentals',
     options: [
       {
         id: '1a',
@@ -42,6 +43,7 @@ export const quantumQuestions: MCQQuestion[] = [
     question: 'Which property allows a qubit to exist in multiple states simultaneously?',
     category: 'Quantum Properties',
     difficulty: 'beginner',
+    prereq: 'Understanding of qubits and basic quantum mechanical concepts',
     options: [
       {
         id: '2a',
@@ -78,6 +80,7 @@ export const quantumQuestions: MCQQuestion[] = [
     question: 'What happens when you measure a qubit in superposition?',
     category: 'Measurement',
     difficulty: 'intermediate',
+    prereq: 'Knowledge of superposition and quantum measurement theory',
     options: [
       {
         id: '3a',
@@ -114,6 +117,7 @@ export const quantumQuestions: MCQQuestion[] = [
     question: 'Which gate is equivalent to a classical NOT gate in quantum computing?',
     category: 'Quantum Gates',
     difficulty: 'beginner',
+    prereq: 'Familiarity with classical logic gates and quantum gate concepts',
     options: [
       {
         id: '4a',
@@ -150,6 +154,7 @@ export const quantumQuestions: MCQQuestion[] = [
     question: 'What is quantum entanglement?',
     category: 'Quantum Properties',
     difficulty: 'intermediate',
+    prereq: 'Understanding of quantum states, superposition, and multi-qubit systems',
     options: [
       {
         id: '5a',
@@ -186,6 +191,7 @@ export const quantumQuestions: MCQQuestion[] = [
     question: 'Which algorithm demonstrates quantum advantage for factoring large numbers?',
     category: 'Quantum Algorithms',
     difficulty: 'intermediate',
+    prereq: 'Basic knowledge of quantum algorithms and computational complexity theory',
     options: [
       {
         id: '6a',
@@ -222,6 +228,7 @@ export const quantumQuestions: MCQQuestion[] = [
     question: 'What causes decoherence in quantum systems?',
     category: 'Quantum Errors',
     difficulty: 'advanced',
+    prereq: 'Advanced understanding of quantum mechanics and open quantum systems',
     options: [
       {
         id: '7a',
@@ -258,6 +265,7 @@ export const quantumQuestions: MCQQuestion[] = [
     question: 'What is the primary advantage of Grover\'s algorithm?',
     category: 'Quantum Algorithms',
     difficulty: 'intermediate',
+    prereq: 'Familiarity with classical search algorithms and quantum computational models',
     options: [
       {
         id: '8a',

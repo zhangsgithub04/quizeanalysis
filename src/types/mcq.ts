@@ -12,6 +12,7 @@ export interface MCQQuestion {
   options: MCQOption[];
   category: string;
   difficulty: 'beginner' | 'intermediate' | 'advanced';
+  prereq?: string;
 }
 
 export interface KnowledgeGap {
