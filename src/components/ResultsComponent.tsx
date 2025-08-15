@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription } from '@/components/ui/alert';
@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { DiagnosisResult, KnowledgeGap } from '@/types/mcq';
 import { getStudyPriority } from '@/utils/analysis';
-import { CheckCircle, AlertCircle, BookOpen, Target, RotateCcw, Volume2 } from 'lucide-react';
+import { CheckCircle, AlertCircle, BookOpen, Target, RotateCcw, Volume2, VolumeX } from 'lucide-react';
 
 interface ResultsComponentProps {
   diagnosis: DiagnosisResult;
@@ -18,8 +18,16 @@ interface ResultsComponentProps {
 export default function ResultsComponent({ diagnosis, onRestart }: ResultsComponentProps) {
   const { score, totalQuestions, knowledgeGaps, feedback } = diagnosis;
   const studyPriority = getStudyPriority(knowledgeGaps as (KnowledgeGap & { frequency?: number })[]);
+  const [isReading, setIsReading] = useState(false);
   
   const handleReadAloud = () => {
+    if (isReading) {
+      // Stop reading
+      window.speechSynthesis.cancel();
+      setIsReading(false);
+      return;
+    }
+
     if ('speechSynthesis' in window) {
       // Stop any currently playing speech
       window.speechSynthesis.cancel();
@@ -39,6 +47,11 @@ export default function ResultsComponent({ diagnosis, onRestart }: ResultsCompon
       utterance.rate = 0.9;
       utterance.pitch = 1;
       utterance.volume = 0.8;
+      
+      // Set up event handlers
+      utterance.onstart = () => setIsReading(true);
+      utterance.onend = () => setIsReading(false);
+      utterance.onerror = () => setIsReading(false);
       
       window.speechSynthesis.speak(utterance);
     } else {
@@ -103,10 +116,19 @@ export default function ResultsComponent({ diagnosis, onRestart }: ResultsCompon
           size="sm"
           onClick={handleReadAloud}
           className="mt-2 text-muted-foreground hover:text-foreground"
-          title="Read diagnosis aloud"
+          title={isReading ? "Stop reading" : "Read diagnosis aloud"}
         >
-          <Volume2 className="h-4 w-4 mr-1" />
-          Read Aloud
+          {isReading ? (
+            <>
+              <VolumeX className="h-4 w-4 mr-1" />
+              Stop Reading
+            </>
+          ) : (
+            <>
+              <Volume2 className="h-4 w-4 mr-1" />
+              Read Aloud
+            </>
+          )}
         </Button>
       </Alert>
 
