@@ -8,7 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 import { DiagnosisResult, KnowledgeGap } from '@/types/mcq';
 import { getStudyPriority } from '@/utils/analysis';
-import { CheckCircle, AlertCircle, BookOpen, Target, RotateCcw } from 'lucide-react';
+import { CheckCircle, AlertCircle, BookOpen, Target, RotateCcw, Volume2 } from 'lucide-react';
 
 interface ResultsComponentProps {
   diagnosis: DiagnosisResult;
@@ -18,6 +18,33 @@ interface ResultsComponentProps {
 export default function ResultsComponent({ diagnosis, onRestart }: ResultsComponentProps) {
   const { score, totalQuestions, knowledgeGaps, feedback } = diagnosis;
   const studyPriority = getStudyPriority(knowledgeGaps as (KnowledgeGap & { frequency?: number })[]);
+  
+  const handleReadAloud = () => {
+    if ('speechSynthesis' in window) {
+      // Stop any currently playing speech
+      window.speechSynthesis.cancel();
+      
+      // Create the text to read
+      let textToRead = `Your quiz results: ${score}% correct. ${feedback}`;
+      
+      // Add knowledge gaps if any
+      if (knowledgeGaps.length > 0) {
+        textToRead += ` You have ${knowledgeGaps.length} knowledge gaps to work on: `;
+        knowledgeGaps.forEach((gap, index) => {
+          textToRead += `${index + 1}. ${gap.concept}: ${gap.description}. Recommendation: ${gap.recommendation}. `;
+        });
+      }
+      
+      const utterance = new SpeechSynthesisUtterance(textToRead);
+      utterance.rate = 0.9;
+      utterance.pitch = 1;
+      utterance.volume = 0.8;
+      
+      window.speechSynthesis.speak(utterance);
+    } else {
+      alert('Text-to-speech is not supported in your browser.');
+    }
+  };
   
   const getScoreColor = (score: number) => {
     if (score >= 90) return 'text-green-600';
@@ -71,6 +98,16 @@ export default function ResultsComponent({ diagnosis, onRestart }: ResultsCompon
         <AlertDescription className="text-sm leading-relaxed">
           {feedback}
         </AlertDescription>
+        <Button
+          variant="ghost"
+          size="sm"
+          onClick={handleReadAloud}
+          className="mt-2 text-muted-foreground hover:text-foreground"
+          title="Read diagnosis aloud"
+        >
+          <Volume2 className="h-4 w-4 mr-1" />
+          Read Aloud
+        </Button>
       </Alert>
 
       {/* Knowledge Gaps */}
